@@ -1,16 +1,18 @@
 import { Module } from '@nestjs/common';
 import { UserController } from './users.controller';
 import { ParamController } from './params.controller';
-import { HelloContainer } from './firstApp.controller';
-import { BodyDataController } from './body_data.controller';
+import { HelloController } from './firstApp.controller';
+import { BodyDataController } from './bodydata.controller';
+import { PostController } from './post.controller';
 
 @Module({
   // imports: [],
   controllers: [
     UserController,
     ParamController,
-    HelloContainer,
+    HelloController,
     BodyDataController,
+    PostController,
   ],
   // providers: [],
 })
