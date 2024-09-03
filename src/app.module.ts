@@ -4,6 +4,7 @@ import { ParamController } from './params.controller';
 import { HelloController } from './firstApp.controller';
 import { BodyDataController } from './bodydata.controller';
 import { PostController } from './post.controller';
+import { UserStore } from './user.store';
 
 @Module({
   // imports: [],
@@ -14,6 +15,6 @@ import { PostController } from './post.controller';
     BodyDataController,
     PostController,
   ],
-  // providers: [],
+  providers: [UserStore],
 })
 export class AppModule {}
