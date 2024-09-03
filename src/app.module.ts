@@ -15,6 +15,12 @@ import { UserStore } from './user.store';
     BodyDataController,
     PostController,
   ],
-  providers: [UserStore],
+  providers: [
+    UserStore,
+    {
+      provide: 'DATA',
+      useValue: { name: 'Faraz', age: 20, phone: '6303995683' },
+    },
+  ],
 })
 export class AppModule {}
